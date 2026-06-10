@@ -1,106 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroMinas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroMinas</title>
 
-    <link rel="stylesheet" href="style.css">
+<style>
 
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#f4f1e8;
+color:#333;
+}
+
+header{
+background:#2e7d32;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+font-weight:bold;
+}
+
+.hero{
+height:70vh;
+background-image:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero div{
+background:rgba(0,0,0,0.5);
+padding:30px;
+border-radius:15px;
+}
+
+section{
+padding:50px 10%;
+}
+
+h2{
+color:#2e7d32;
+margin-bottom:15px;
+}
+
+footer{
+background:#2e7d32;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+button{
+background:#4caf50;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+margin-top:15px;
+}
+
+button:hover{
+background:#2e7d32;
+}
+
+</style>
+
 </head>
 <body>
 
 <header>
-    <h1>🌱 AgroMinas</h1>
-    <p>Solos para Cultivo e Agricultura em Minas Gerais</p>
+<h1>🌱 AgroMinas</h1>
+<p>Solo e Cultivo de Plantios em Minas Gerais</p>
 
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#solo">Importância do Solo</a>
-        <a href="#cultivo">Cultivo</a>
-        <a href="#minas">Agricultura em MG</a>
-        <a href="#sustentabilidade">Sustentabilidade</a>
-        <a href="#contato">Contato</a>
-    </nav>
+<nav>
+<a href="#solo">Solo</a>
+<a href="#cultivo">Cultivo</a>
+<a href="#minas">Minas Gerais</a>
+<a href="#sustentabilidade">Sustentabilidade</a>
+</nav>
 </header>
 
-<section id="inicio" class="hero">
-    <h2>Bem-vindo ao AgroMinas</h2>
-    <p>
-        Conheça a importância dos solos para o cultivo agrícola,
-        a produção sustentável e o desenvolvimento do agronegócio em Minas Gerais.
-    </p>
+<div class="hero">
+<div>
+<h1>AgroMinas</h1>
+<p>Conhecendo os solos e a agricultura mineira</p>
 
-    <button onclick="mostrarMensagem()">
-        Saiba Mais
-    </button>
-</section>
+<button onclick="mensagem()">
+Saiba Mais
+</button>
+
+</div>
+</div>
 
 <section id="solo">
-    <h2>🌿 Importância do Solo</h2>
+<h2>Importância do Solo</h2>
 
-    <img src="imagens/solo.jpg" alt="Solo agrícola">
+<p>
+O solo é um recurso fundamental para a vida na Terra.
+Ele fornece nutrientes para as plantas, ajuda no armazenamento de água
+e possibilita a produção de alimentos.
+</p>
 
-    <p>
-        O solo é um recurso fundamental para a vida na Terra.
-        Ele fornece nutrientes para as plantas, armazena água
-        e contribui para a produção de alimentos.
-    </p>
 </section>
 
 <section id="cultivo">
-    <h2>🌾 Cultivo e Plantios</h2>
+<h2>Cultivo e Plantios</h2>
 
-    <img src="imagens/cultivo.jpg" alt="Cultivo agrícola">
+<p>
+O preparo adequado do solo é essencial para garantir uma agricultura produtiva,
+sustentável e de qualidade.
+</p>
 
-    <p>
-        O preparo adequado do solo é essencial para garantir
-        produtividade e qualidade nas plantações.
-    </p>
 </section>
 
 <section id="minas">
-    <h2>🏔️ Agricultura em Minas Gerais</h2>
+<h2>Agricultura em Minas Gerais</h2>
 
-    <img src="imagens/minas.jpg" alt="Agricultura em Minas Gerais">
+<p>
+Minas Gerais é destaque nacional na produção de café, milho, soja,
+feijão e diversas culturas agrícolas.
+</p>
 
-    <p>
-        Minas Gerais é destaque na produção de café,
-        milho, soja, feijão e diversas culturas agrícolas.
-    </p>
 </section>
 
 <section id="sustentabilidade">
-    <h2>♻️ Sustentabilidade</h2>
+<h2>Sustentabilidade</h2>
 
-    <p>
-        A preservação do solo garante o equilíbrio ambiental,
-        a produção sustentável e a conservação dos recursos naturais.
-    </p>
-</section>
+<p>
+A preservação do solo e dos recursos naturais é indispensável para garantir
+a produção agrícola das futuras gerações.
+</p>
 
-<section id="contato">
-    <h2>📩 Contato</h2>
-
-    <form>
-        <input type="text" placeholder="Seu nome" required>
-
-        <input type="email" placeholder="Seu email" required>
-
-        <textarea placeholder="Mensagem"></textarea>
-
-        <button type="submit">
-            Enviar
-        </button>
-    </form>
 </section>
 
 <footer>
-    <p>© 2026 AgroMinas | Projeto Escolar</p>
+<p>© 2026 AgroMinas - Projeto Escolar</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+
+function mensagem(){
+alert("Bem-vindo ao AgroMinas! 🌱");
+}
+
+</script>
 
 </body>
 </html>
